@@ -1,62 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
 
-main{
- 
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
-   background-color: hsl(47, 88%, 63%);
-   min-height: 100vh; 
-   
-   
-   }
-   *{
+* {
      margin: 0;
      padding: 0;
-   }
-   section{
-     box-shadow:5px 5px ;
-     margin: 15px;
-   }
-   h6{
-     padding:10px;
-     
-     
-     
-   }
-   section.contaner{
-     width: 350px;
-     height: fit-content;
-     margin: auto;
-     padding:20px;
-     padding-left: 20px;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     padding-right: 20px;
-     background-color: white;
-     border-radius: 20px;
-     border: solid;
-     border-collapse: groove;
-    
-   }
-   section figure img{
-     width: 10%;
-     border-radius: 15px;
-   }
-   p{
-     font-size: 16px;
-     font-family: [Figtree]
-     (https://fonts.google.com/specimen/Figtree);
-   }
-     button{
-      padding:5px;
-      background-color: hsl(47, 88%, 63%); 
-     }
-     footer{
-      padding: 10px;
-      
-       width: 100%;
-       display: flex;
-   justify-content: left;
-   align-items: center; 
-     }
+     box-sizing: border-box;
+
+}
+
+:root {
+     --yellow: hsl(47, 88%, 63%);
+     --white: hsl(0, 0%, 100%);
+     --grey: hsl(0, 0%, 50%);
+     --black: hsl(0, 0%, 7%);
+
+}
+
+body {
+     font-family: 'Figtree', sans-serif;
+}
+
+
+main {
+     background-color: var(--yellow);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.card {
+     background-color: var(--white);
+     width: 375px;
+     padding: 1.5rem;
+     border: 1px solid var(--black);
+     border-radius: 10px;
+     margin: 2rem;
+     box-shadow: 8px 10px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.card .card__header .card__image img {
+     width: 100%;
+     border-radius: 10px;
+}
+
+.card .card__body .card__category {
+     background-color: var(--yellow);
+     width: 100px;
+     height: 40px;
+     text-align: center;
+     border-radius: 5px;
+     margin: 1rem 0;
+     line-height: 40px;
+
+}
+
+.card .card__body .card__category span {
+     font-size: 1rem;
+     font-weight: bold;
+     line-height: 2vh;
+
+}
+
+.card .card__body .card__date_post {
+     margin: 1rem 0;
+}
+
+.card .card__body .card__date_post span {
+     font-size: .8rem;
+     font-weight: 600;
+     color: var(--grey);
+}
+
+.card .card__body .card__title {
+     margin: 1rem 0;
+}
+
+.card .card__body .card__title h1 {
+     font-size: 1.20rem;
+}
+
+.card .card__body .card__title h1:hover {
+     color: var(--yellow);
+     cursor: pointer;
+}
+
+.card .card__body .card__main {
+     margin: 1rem 0;
+     font-size: 1rem;
+     font-weight: 600;
+     color: var(--grey);
+}
+
+.card .card__author {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin: 1rem 0;
+}
+
+.card .card__author img {
+     width: 6vh;
+}
+
+.card .card__author span {
+     font-size: .9rem;
+     font-weight: 800;
+}
+
+  footer {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    footer a {
+      color: hsl(228, 45%, 44%);
+    }
