@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style/style.css">
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
- 
 
 </head>
-<body>
-<main>
-  <section class="contaner">
-      <figure>
-        <img src="./assets//images/illustration-article.svg" alt="photo ">
-      </figure>
-      <div class="contain"><br>
-        <button>
-          Learning </button>
-        <br>
-        <h6>Published 18 Jan. 2024</h6>
-        <h1>HTML AND CSS Foundetion</h1>
-        <p>These languages are the backbone of every <br>
-          website,defining structure,content,and <br>
-          presentation.
-        </p>
-       <footer>  
-        <h6>
-         <img src="./assets/images/image-avatar.webp" alt="Gerg Hooper"> 
-          </h6>
-        <h6> Gerg Hooper</h6>
-      </footer>
-      </div>
-  </section>
 
-</main>
+<body>
+
+  <main>
+    <div class="card">
+      <div class="card__header">
+        <div class="card__image">
+          <img src="./assets/images/illustration-article.svg" alt="image-card">
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="card__category">
+          <span>Learning</span>
+        </div>
+        <div class="card__date_post">
+          <span>Published 21 Dec 2023</span>
+        </div>
+        <div class="card__title">
+          <h1>HTML & CSS foundations</h1>
+        </div>
+        <div class="card__main">
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+      </div>
+      <div class="card__author">
+        <img src="./assets/images/image-avatar.webp" alt="image-author">
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by Sandesh Kamkar</a>.
+  </footer>
 </body>
+
 </html>
